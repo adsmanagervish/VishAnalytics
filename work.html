@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample work | Vish Analytics</title>
+<meta name="description" content="A dental clinic tracking audit and a Consent Mode v2 demo project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#0B1B33;color:#0B1B33}
+a{color:#0B1B33}
+input,textarea,button{font-family:inherit}
+a:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid #0B1B33;outline-offset:3px}
+img{max-width:100%}
+</style>
+</head>
+<body>
+<div style="width:100%;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;color:#0B1B33">
+
+<!-- HEADER: navy -->
+<div style="background:#0B1B33;color:#FFFFFF;padding:28px 24px 96px">
+<div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:96px">
+<div style="display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center">
+<div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.01em">Vish Analytics</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;font-size:15px;font-weight:500">
+<a href="index.html#services" style="color:#FFFFFF;text-decoration:none">Services</a>
+<a href="work.html" style="color:#FFFFFF;text-decoration:none">Sample work</a>
+<a href="index.html#process" style="color:#FFFFFF;text-decoration:none">Process</a>
+<a href="index.html#about" style="color:#FFFFFF;text-decoration:none">About</a>
+<a href="index.html#contact" style="color:#6CB6FF;text-decoration:none;border:1.5px solid #6CB6FF;padding:9px 20px;border-radius:999px;font-weight:600">Contact</a>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<h1 style="margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:clamp(44px,9vw,72px);line-height:1.0;letter-spacing:-0.04em;text-wrap:balance">Sample work</h1>
+<p style="margin:0;font-size:22px;line-height:1.5;color:rgba(255,255,255,0.74);max-width:560px">Real problems I found and projects I built while learning to audit tracking.</p>
+</div>
+</div>
+</div>
+
+<!-- CASES: sky -->
+<div style="background:#6CB6FF;padding:96px 24px">
+<div style="max-width:1100px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div style="flex:2 1 440px;min-width:0;background:#FFFFFF;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<div style="font-weight:600;font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:rgba(11,27,51,0.74)">Audit</div>
+<h3 style="margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:28px;line-height:1.2;letter-spacing:-0.025em">A dental clinic website that counted every visit as a conversion</h3>
+<p style="margin:0;color:rgba(11,27,51,0.74)">I reviewed the clinic's WordPress site using only Google Tag Assistant and Chrome DevTools. I found four problems:</p>
+<div style="display:flex;flex-direction:column">
+<div style="padding:14px 0;border-top:1px solid rgba(11,27,51,0.2)">Tag Manager was loaded twice by a header plugin, so tags could fire twice.</div>
+<div style="padding:14px 0;border-top:1px solid rgba(11,27,51,0.2)">The noscript tag was in the wrong place.</div>
+<div style="padding:14px 0;border-top:1px solid rgba(11,27,51,0.2)">page_view and first_visit were set as Key Events, so they imported into Google Ads as conversions.</div>
+<div style="padding:14px 0;border-top:1px solid rgba(11,27,51,0.2);border-bottom:1px solid rgba(11,27,51,0.2)">A separate Google Ads conversion fired on every page load.</div>
+</div>
+<p style="margin:0;font-weight:600">Why it matters: Google Ads could end up optimising for visits instead of patient enquiries, and the reports would overstate results.</p>
+</div>
+<div style="flex:1 1 300px;min-width:0;background:#0B1B33;color:#FFFFFF;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<div style="font-weight:600;font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:#6CB6FF">Demo project</div>
+<h3 style="margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:28px;line-height:1.2;letter-spacing:-0.025em">Cookie consent with Consent Mode v2</h3>
+<p style="margin:0;color:rgba(255,255,255,0.74)">A sandbox I built with a custom consent banner and Tag Manager, so analytics and ad tags follow each visitor's cookie choice.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CTA: white -->
+<div style="background:#FFFFFF;padding:96px 24px">
+<div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:24px 40px;justify-content:space-between;align-items:center">
+<h2 style="margin:0;flex:1 1 420px;min-width:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-0.03em">Want this check on your website?</h2>
+<a href="index.html#contact" style="display:inline-block;background:#0B1B33;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:17px;padding:18px 32px;border-radius:999px">Ask for a tracking check</a>
+</div>
+</div>
+
+<!-- FOOTER: navy -->
+<div style="background:#0B1B33;color:#FFFFFF;padding:72px 24px 32px">
+<div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-wrap:wrap;gap:48px 64px;justify-content:space-between">
+<div style="flex:2 1 280px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:24px;letter-spacing:-0.02em">Vish Analytics</div>
+<p style="margin:0;font-size:16px;color:rgba(255,255,255,0.74);max-width:320px">GA4 and Tag Manager tracking for businesses in Jabalpur and nearby cities.</p>
+</div>
+<div style="flex:1 1 140px;min-width:0;display:flex;flex-direction:column;gap:12px;font-size:16px">
+<div style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6CB6FF">Explore</div>
+<a href="index.html#services" style="color:#FFFFFF;text-decoration:none">Services</a>
+<a href="work.html" style="color:#FFFFFF;text-decoration:none">Sample work</a>
+<a href="index.html#process" style="color:#FFFFFF;text-decoration:none">Process</a>
+<a href="index.html#about" style="color:#FFFFFF;text-decoration:none">About</a>
+<a href="index.html#contact" style="color:#FFFFFF;text-decoration:none">Contact</a>
+</div>
+<div style="flex:1 1 180px;min-width:0;display:flex;flex-direction:column;gap:12px;font-size:16px">
+<div style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6CB6FF">Services</div>
+<a href="index.html#services" style="color:#FFFFFF;text-decoration:none">Tracking audit</a>
+<a href="index.html#services" style="color:#FFFFFF;text-decoration:none">Setup and fixes</a>
+<a href="index.html#services" style="color:#FFFFFF;text-decoration:none">Tracking for Google Ads</a>
+</div>
+<div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:12px;font-size:16px">
+<div style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6CB6FF">Contact</div>
+<div>[YOUR EMAIL]</div>
+<div>[YOUR WHATSAPP NUMBER]</div>
+<div>[YOUR LINKEDIN URL]</div>
+<div style="color:rgba(255,255,255,0.74)">Jabalpur, Madhya Pradesh</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,0.2);padding-top:24px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:14px;color:rgba(255,255,255,0.74)">
+<span>© 2026 Vish Analytics. All rights reserved.</span>
+<span>Serving Jabalpur</span>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
